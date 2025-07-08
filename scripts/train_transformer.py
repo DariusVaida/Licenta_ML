@@ -142,4 +142,4 @@ if __name__ == '__main__':
 
     # Save the trained model's state
     torch.save(model.state_dict(), 'device_classifier_model.pth')
-    print("✅ Model saved to device_classifier_model.pth")
+    print("Model saved to device_classifier_model.pth")

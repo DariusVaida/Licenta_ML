@@ -2,7 +2,8 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 import os
 
-
+##SPLIT THE COLLECTED AND LABELED DATA INTO TRAINING AND TEST DATA
+#TRY TO KEEP A BALANCED AMOUNT OF EACH TYPE OF DEVICE
 output_folder = 'data'
 
 os.makedirs(output_folder, exist_ok=True)

@@ -20,7 +20,9 @@ except FileNotFoundError as e:
     print(f"Error: {e}. Make sure your specs_data/ folder is set up correctly.")
     exit()
 
-#PREPARE DATA AND TRAIN THE STATIC HARDWARE CLASSIFIER
+#PREPARE DATA AND TRAIN THE STATIC HARDWARE CLASSIFIER -
+#TO PUT LABELS ON THE COLLECTED FILES
+
 print("Preparing data and training the hardware classifier...")
 
 print("Cleaning and renaming columns from mobile.csv...")
@@ -98,6 +100,7 @@ def compute_performance_score(row):
 
 
 # H. Create the Performance_Score and Hardware_Tier labels
+#Hardware_Tier - compared to the other devices, how modern a phone's features are.
 spec_data['Performance_Score'] = spec_data.apply(compute_performance_score, axis=1)
 spec_data.dropna(subset=['Performance_Score'], inplace=True)
 scores = spec_data[['Performance_Score']].dropna()
@@ -160,7 +163,7 @@ def assign_hardware_tier(static_data_dict, pipeline, training_df_columns):
     prediction = pipeline.predict(X_predict)
     return prediction[0]
 
-
+#Activity_level - how intense was the task that the device was performing/ executing
 def assign_activity_level(time_series_list):
     """Assigns a label based on overall CPU load and per-core utilization variance."""
     if not time_series_list:
