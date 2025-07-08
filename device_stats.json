@@ -1,0 +1,59 @@
+{
+  "timestamp": "2025-06-24T19:41:12.6295522+03:00",
+  "device_id": "RFCT51KG3BP",
+  "cpu": {
+    "identifier": "SM8350"
+  },
+  "raminfo": {
+    "ram_type": "LPDDR5",
+    "ram_capacity": 7
+  },
+  "battery": {
+    "voltage_mv": 3691,
+    "nominal_capacity_mah": 1004,
+    "max_charging_voltage_mv": 15
+  },
+  "gpu": {
+    "renderer": "Qualcomm Adreno 660"
+  },
+  "memory_capacity_gb": 224,
+  "cpu_clock_m_hz": 1804.8,
+  "gpu_clock_m_hz": 840,
+  "time_series": [
+    {
+      "timestamp": "2025-06-24T19:41:15.0645999+03:00",
+      "used_ram_kb": 5274084,
+      "free_ram_kb": 2260572,
+      "cpu_load_percent": 37,
+      "gpu_load_percent": 11
+    },
+    {
+      "timestamp": "2025-06-24T19:41:16.2627152+03:00",
+      "used_ram_kb": 5282912,
+      "free_ram_kb": 2251744,
+      "cpu_load_percent": 34,
+      "gpu_load_percent": 4
+    },
+    {
+      "timestamp": "2025-06-24T19:41:17.4758284+03:00",
+      "used_ram_kb": 5221700,
+      "free_ram_kb": 2312956,
+      "cpu_load_percent": 45,
+      "gpu_load_percent": 8
+    },
+    {
+      "timestamp": "2025-06-24T19:41:18.6988881+03:00",
+      "used_ram_kb": 5266268,
+      "free_ram_kb": 2268388,
+      "cpu_load_percent": 41,
+      "gpu_load_percent": 0
+    },
+    {
+      "timestamp": "2025-06-24T19:41:19.9356925+03:00",
+      "used_ram_kb": 5252680,
+      "free_ram_kb": 2281976,
+      "cpu_load_percent": 27,
+      "gpu_load_percent": 0
+    }
+  ]
+}
